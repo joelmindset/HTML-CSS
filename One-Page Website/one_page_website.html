@@ -1,69 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Mindset Tile</title>
-		<meta charset="utf-8">
-	</head>
-	<body>
-		<!-- NAV -->
-		<nav>
-			<ul>
-			<a href="#home" id="link"><li>HOME</li></a>
-			<a href="#gallery" id="link"><li>Photos</li></a>
-			<a href="#videos" id="link"><li>Videos</li></a>
-		</nav>
-		</div>
-		<!--END NAV-->
-		<div id="home">
-			<h2>Mindset Tile</h2>
-			<p>Mindset Tile high end custom tile work</p>
-		</div>
-		<!-- GALLERY -->
-		<section>	
-			<div id="gallery">
-				<h2>Photos</h2>
-				<div>
-				<img src="./images/thumb/thumbnail.png" alt="Tile">
-				</div>
-				<div>
-				<img src="./images/thumb/thumbnail_1.png" alt="Tile">
-				</div>
-				<div>
-				<img src="./images/thumb/thumbnail_2.png" alt="Tile">
-				</div>
-				<div>
-				<img src="./images/thumb/thumbnail_3.png" alt="Tile">
-				</div>
-			</div>
-		</section>
-		<!--END GALLERY -->
-		<!-- FORM -->
-		<div class="container">
-		<form action="action_page.php">
-			<label for="fname">First Name</label>
-			<input type="text" id="fname" name="firstname" placeholder="Your name..">
-			<label for="lname">Last Name</label>
-			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
-			<label for="phone">Phone Number</label>
-			<input type="text" id="phone" name="phonenumber" placeholder="Your Phone Number..">
-			<div>
-				<label for="work">Type of Work</label>
-				<textarea id="work" name="work" placeholder="What type of work do you need done?" style="height:200px"></textarea>
-				<input type="submit" value="Submit">
-			</div>
-		</form>
-		</div>
-		<!--END FORM -->
-		<!--VIDEOS -->
-		<div id="videos">
-			<iframe width="640" height="360" src="https://www.youtube.com/embed/h6AABdEfpwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-		<!--END VIDEOS -->
-		<!-- FOOTER -->
-		<footer>
-		<p>Author: Joel</p>
-		<p><a href="mindset@example.com">mindset@example.com</a></p>
-		</footer>
-		<!--END FOOTER-->
-	</body>
+
+<head>
+    <title>Mindset Tile</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./one_page_website.css">
+</head>
+
+<body>
+    <!-- NAV -->
+    <div>
+        <nav>
+            <ul>
+                <a href="#home" id="link">
+                    <li>HOME</li>
+                </a>
+                <a href="#gallery" id="link">
+                    <li>Photos</li>
+                </a>
+                <a href="#videos" id="link">
+                    <li>Videos</li>
+                </a>
+        </nav>
+    </div>
+    <!--END NAV-->
+    <div class="home">
+        <h2>Mindset Tile</h2>
+        <p>Mindset Tile high end custom tile work</p>
+    </div>
+    <!-- GALLERY -->
+    <section>
+        <div id="gallery">
+            <h3>Photos</h3>
+            <div>
+                <img src="./images/thumb/thumbnail.png" alt="Tile">
+            </div>
+            <div>
+                <img src="./images/thumb/thumbnail_1.png" alt="Tile">
+            </div>
+            <div>
+                <img src="./images/thumb/thumbnail_2.png" alt="Tile">
+            </div>
+            <div>
+                <img src="./images/thumb/thumbnail_3.png" alt="Tile">
+            </div>
+        </div>
+    </section>
+    <!--END GALLERY -->
+    <!-- FORM -->
+    <div class="container">
+        <form action="action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phonenumber" placeholder="Your Phone Number..">
+            <div>
+                <label for="work">Type of Work?</label>
+                <textarea id="work" name="work" placeholder="What type of work do you need done?" style="height:200px"></textarea>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <!--END FORM -->
+    <!--VIDEOS -->
+    <div id="videos">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/h6AABdEfpwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <!--END VIDEOS -->
+    <!-- FOOTER -->
+    <footer>
+        <p>Author: Joel</p>
+        <p><a href="mindset@example.com">mindset@example.com</a></p>
+    </footer>
+    <!--END FOOTER-->
+</body>
+
 </html>
