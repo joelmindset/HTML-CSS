@@ -1,0 +1,263 @@
+@media screen and (max-width: 600px) {
+    html {
+        background-color: red;
+        color: blue;
+    }
+}
+
+body {
+    margin: 0;
+    background-color: rgb(185, 227, 243);
+}
+
+
+/* MY Image */
+
+img {
+    filter: brightness(200%);
+    border: 6px dotted blue;
+    border-radius: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+/* END Image */
+
+
+/* FOOTER */
+
+footer {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: blueviolet;
+    font-size: 4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 25px;
+    background-color: rgba(92, 216, 61, .6);
+}
+
+
+/* END FOOTER */
+
+
+/* Start Table */
+
+table,
+th,
+td {
+    width: 100%;
+    border: 2px solid green;
+    border-collapse: initial;
+}
+
+th {
+    background-color: greenyellow;
+}
+
+table th,
+table td {
+    padding: 10px;
+}
+
+table {
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    top: 20px;
+}
+
+td {
+    background-color: mediumspringgreen;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(251, 0, 0);
+    font-size: xxx-large;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* END TABLE */
+
+
+/* START NAV */
+
+ul {
+    position: fixed;
+    top: 0;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    list-style: none;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgb(172, 41, 224);
+    border-radius: 25px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+li {
+    float: left;
+    width: 200px;
+}
+
+li a {
+    display: block;
+    color: rgb(17, 255, 164);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 25px;
+    border-color: mediumturquoise;
+    border-style: groove;
+}
+
+li a:hover {
+    background-color: rgb(224, 9, 74);
+    color: orange;
+}
+
+
+/* END NAV */
+
+
+/* START COLUMNS */
+
+.main {
+    padding-top: 45px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 0px;
+    background-color: rgb(79, 251, 0);
+    border-style: solid;
+    border-radius: 25px;
+    border-color: rgb(58, 44, 255);
+    margin-top: 30px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row h1 {
+    color: rgb(76, 94, 253);
+    background-color: rgb(251, 0, 0);
+    border-radius: 25px;
+    width: fit-content;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.row p {
+    background-color: rgb(83, 129, 255);
+    background-size: auto;
+    border-radius: 25px;
+    width: 50%;
+    height: 300px;
+    color: rgb(44, 255, 44);
+    font-size: xx-large;
+    padding: 20px;
+}
+
+p:hover {
+    background-color: yellow;
+    color: rgb(255, 16, 235);
+}
+
+
+/* END COLUMNS */
+
+
+/* STRAT IMAGE */
+
+.container_2 {
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.image_1 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+
+/* END IMAGE */
+
+
+/* START VIDEO */
+
+.container_2:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: rgb(49, 248, 9);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.textoverlay {
+    position: relative;
+    text-align: center;
+    color: rgb(243, 8, 8);
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.textvid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* END VIDEO */
