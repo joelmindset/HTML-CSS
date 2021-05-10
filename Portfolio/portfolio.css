@@ -3,13 +3,14 @@
         
         body {
             margin: 0%;
-            background-color: rgb(149, 147, 147);
+            background-color: rgb(100, 219, 255);
         }
         /* Heading 1 elements */
         
         h1 {
             font-family: DejaVu sans Mono;
             text-align: center;
+            font-size: xxx-large;
             margin-top: 15px;
             color: white;
         }
@@ -35,7 +36,7 @@
             font-family: Arial, Helvetica, sans-serif;
             text-align: justify;
             letter-spacing: 1px;
-            font-size: 20px;
+            font-size: 18px;
             padding-left: 20px;
             padding-right: 20px;
         }
@@ -95,7 +96,6 @@
         
         footer {
             padding: 2%;
-            background-color: rgb(221, 219, 219);
         }
         /********** END OF GENERAL STYLING **********/
         /******** NAVBAR STYLING *******/
@@ -169,15 +169,12 @@
         /* Formating for backgroud video */
         
         #Typing_Video {
-            position: fixed;
-            left: 0;
-            margin-top: 0;
-            max-width: 100%;
+            position: absolute;
+            width: 100%;
             z-index: -1;
             border-left: rgb(117, 198, 245);
             border-right: rgb(176, 194, 248);
             border-style: solid;
-            box-sizing: 12px;
         }
         /* Screens that are 576px and smaller will not display the background video */
         
@@ -220,6 +217,10 @@
             padding: 10px;
             padding-top: 1%;
             height: 400px;
+            background-color: rgb(117, 198, 245);
+        }
+        
+        .Column_1:hover p {
             background-color: rgb(117, 198, 245);
         }
         /* smaller display */
@@ -301,5 +302,9 @@
         
         form label {
             color: rgb(22, 38, 126);
+        }
+        
+        .row {
+            background-color: aquamarine;
         }
         /***** END OF CONTACT FORM STYLING ****/
