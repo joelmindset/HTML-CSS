@@ -4,7 +4,7 @@
 <head>
     <title>Mindset Tile</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./one_page_website.css">
+    <link rel="stylesheet" href="css/one_page_website.css">
 </head>
 
 <body>
@@ -12,15 +12,9 @@
     <div>
         <nav>
             <ul>
-                <a href="#home" id="link">
-                    <li>HOME</li>
-                </a>
-                <a href="#gallery" id="link">
-                    <li>Photos</li>
-                </a>
-                <a href="#videos" id="link">
-                    <li>Videos</li>
-                </a>
+                <li><a href="#home" id="link">HOME</a></li>
+                <li><a href="#gallery" id="link">Photos</a></li>
+                <li><a href="#videos" id="link">Videos</a></li>
         </nav>
     </div>
     <!--END NAV-->
@@ -31,20 +25,77 @@
     <!-- GALLERY -->
     <section>
         <div id="gallery">
-            <h3>Photos</h3>
-            <div>
-                <img src="./images/thumb/thumbnail.png" alt="Tile">
-            </div>
-            <div>
-                <img src="./images/thumb/thumbnail_1.png" alt="Tile">
-            </div>
-            <div>
-                <img src="./images/thumb/thumbnail_2.png" alt="Tile">
-            </div>
-            <div>
-                <img src="./images/thumb/thumbnail_3.png" alt="Tile">
+            <!-- Images for lightbox-->
+            <div class="row">
+                <h3>Photos</h3>
+                <div class="column">
+                    <img src="images/thumb/images.jpg" onclick="openModal(1);currentSlide" class="hover-shadow" alt="Tile">
+                </div>
+                <div class="column">
+                    <img src="images/thumb/images1.jpg" onclick="openModal(2);currentSlide" class="hover-shadow" alt="Tile">
+                </div>
+                <div class="column">
+                    <img src="images/thumb/images2.jpg" onclick="openModal(3);currentSlide" class="hover-shadow" alt="Tile">
+                </div>
+                <div class="column">
+                    <img src="images/thumb/images3.jpg" onclick="openModal(4);currentSlide" class="hover-shadow" alt="Tile">
+                </div>
             </div>
         </div>
+
+        <!-- The Modal and Lightbox-->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/thumb/images.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/thumb/images1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/thumb/images2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/thumb/images3.jpg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail controls -->
+                <div class="column control">
+                    <img class="demo" src="images/thumb/images.jpg" onclick="currentSlide(1)" alt="Flooring">
+                </div>
+
+                <div class="column control">
+                    <img class="demo" src="images/thumb/images1.jpg" onclick="currentSlide(2)" alt="Bathroom">
+                </div>
+
+                <div class="column control">
+                    <img class="demo" src="images/thumb/images2.jpg" onclick="currentSlide(3)" alt="Shower">
+                </div>
+
+                <div class="column control">
+                    <img class="demo" src="images/thumb/images3.jpg" onclick="currentSlide(4)" alt="Bathroom">
+                </div>
+            </div>
+        </div>
+
     </section>
     <!--END GALLERY -->
     <!-- FORM -->
@@ -66,15 +117,15 @@
     <!--END FORM -->
     <!--VIDEOS -->
     <div id="videos">
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/h6AABdEfpwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/h6AABdEfpwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"></iframe>
     </div>
     <!--END VIDEOS -->
     <!-- FOOTER -->
     <footer>
-        <p>Author: Joel</p>
-        <p><a href="mindset@example.com">mindset@example.com</a></p>
+        <p>Author: Joel <a href="mindset@example.com">mindset@example.com</a></p>
     </footer>
     <!--END FOOTER-->
+    <script src="js/one_page_website.js"></script>
 </body>
 
 </html>
